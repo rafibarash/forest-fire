@@ -10,7 +10,7 @@ class Forest():
         '''prompts for density, percentPine, and wetness, and returns values'''
         density = float(input('What percentage of grid cells are occupied by trees? (0.10-1): '))
         percentPine = float(input('What percentage of trees are pine? (0.00-1): '))
-        wetness = int(input('How wet is the forest? (1-100),(1=dry,100=wet): '))
+        wetness = float(input('How wet is the forest? (1-3),(1=dry,3=wet): '))
         return density,percentPine,wetness
 
     def initialize_forest_list(self,density,percentPine,wetness):
